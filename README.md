@@ -14,7 +14,7 @@ Recriação do jogo Road Fighter (NES) em Assembly. Projeto em RISC-V da matéri
 - Mais díficil são os detalhes
 
 # Pesquisas:
-[ ] Vídeo discord transformando \
-[ ] Sprite do carro na tela \
-[ ] Carro mexendo com teclado
+- [ ] Vídeo discord transformando bitmap em .data
+- [ ] Sprite do carro na tela
+- [ ] Carro mexendo com teclado
 
