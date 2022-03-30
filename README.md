@@ -5,7 +5,7 @@ Recriação do jogo Road Fighter (NES) em Assembly. Projeto em RISC-V da matéri
 Usar word invés de byte \
 Comentar tudo que fazer \
 Cor transparente magenta \
-Tamanhos dos sprites em múltiplos de 4 \
+Tamanho dos sprites em múltiplos de 4 \
 Ver projetos anteriores no "Execute" do RARS \
 Menus com 1 e 2 para selecionar \
 Mais díficil são os detalhes
