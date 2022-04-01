@@ -12,9 +12,22 @@ Recriação do jogo Road Fighter (NES) em Assembly. Projeto em RISC-V da matéri
 - Ver projetos anteriores no "Execute" do RARS
 - Menus com 1 e 2 para selecionar
 - Mais díficil são os detalhes
+- movimentações serão feitas através de uma função que printa o sprite na coordenada X, apaga e printa de novo na coordenada Y
+- Endereço final = multiplicação da resolução e depois transforma para hexadecimal / ex: 320 x 240 = 76.800 = 12C00
+- Combustivel é um temporizador, o tempo conta mesmo se o carro estiver parado. Se o carro bater em um carro colorido, tempo += 5, se morrer, tempo -= 5 /// jogo acaba quando tempo = 0
+- carros vermelhos mudam de posição apenas uma vez /// carros azuis mudam de posição constantemente /// carros amarelos não mudam de posição.
 
 # Pesquisas:
 - [ ] Vídeo discord transformando bitmap em .data
 - [ ] Sprite do carro na tela
 - [ ] Carro mexendo com teclado
+- [ ] Como fazer a função de movimentação
 
+
+
+# Progresso:
+[X] Printar alguma coisa no bitmap
+[ ] Mapa e todos os sprites printaveis
+[ ] Utilização do teclado
+[ ] Movimentação
+[ ] Áudio
