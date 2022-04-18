@@ -18,7 +18,7 @@ Recriação do jogo Road Fighter (NES) em Assembly. Projeto em RISC-V da matéri
 - carros vermelhos mudam de posição apenas uma vez /// carros azuis mudam de posição constantemente /// carros amarelos não mudam de posição.
 
 # Pesquisas:
-- [ ] Vídeo discord transformando bitmap em .data
+- [X] Vídeo discord transformando bitmap em .data
 - [ ] Sprite do carro na tela
 - [ ] Carro mexendo com teclado
 - [ ] Como fazer a função de movimentação
@@ -26,8 +26,9 @@ Recriação do jogo Road Fighter (NES) em Assembly. Projeto em RISC-V da matéri
 
 
 # Progresso:
-[X] Printar alguma coisa no bitmap
-[ ] Mapa e todos os sprites printaveis
-[ ] Utilização do teclado
-[ ] Movimentação
-[ ] Áudio
+- [X] Printar alguma coisa no bitmap
+- [ ] Fazer um pixel se mexer
+- [ ] Mapa e todos os sprites printáveis
+- [ ] Utilização do teclado
+- [ ] Movimentação
+- [ ] Áudio
