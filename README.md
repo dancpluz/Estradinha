@@ -1,5 +1,5 @@
 # 🚗 RoadFighter_RISC-V 🏎
-Recriação do jogo Road Fighter (NES) em Assembly. Projeto em RISC-V da matéria ISC na UNB. \
+Recriação do jogo Road Fighter (NES) em Assembly. Projeto em RISC-V da matéria ISC na UNB.
 
 ![upload-road-fighter-1575231313140](https://user-images.githubusercontent.com/64702639/160934977-a04cc4e6-6c98-43d6-b299-9f5ba6c1797d.jpeg)
 
@@ -21,8 +21,8 @@ Recriação do jogo Road Fighter (NES) em Assembly. Projeto em RISC-V da matéri
 
 # Pesquisas:
 - [X] Vídeo discord transformando bitmap em .data
-- [ ] Criar .data com bmp de resoluções diferentes
-- [ ] Sprite do carro na tela
+- [X] Criar .data com bmp de resoluções diferentes
+- [X] Sprite do carro na tela
 - [ ] Carro mexendo com teclado
 - [ ] Como fazer a função de movimentação
 
