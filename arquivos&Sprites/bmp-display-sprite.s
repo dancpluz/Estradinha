@@ -5,34 +5,44 @@
 	# dados das imagens que serao impressas (as duas primeiras words sao suas dimensoes, o restante sao as informacoes de cor de cada pixel (1 pixel por byte)
 	.include "Carro0.data"
 
+.macro print(%imagem)
+FORA:   
+	li t1,0xFF000000    # endereco inicial da Memoria VGA - Frame 0
+    	li t2,0xFF012C00    # endereco final 
+    	la s1,%imagem        # endereço dos dados da tela na memoria
+    	addi s1,s1,8        # primeiro pixels depois das informações de nlin ncol
+LOOP1:  
+	beq t1,t2,CONTA        # Se for o último endereço então sai do loop
+    	lw t3,0(s1)        # le um conjunto de 4 pixels : word
+    	sw t3,0(t1)        # escreve a word na memória VGA
+    	addi t1,t1,4        # soma 4 ao endereço
+    	addi s1,s1,4
+    	j LOOP1            # volta a verificar
+.end_macro
+
 .text	
 	# seleciona o frame 0
 #	li t0, 0xFF200604	# carrega o endereco de selecao de frame
 #	li t1, 0		# t1 = 0
 #	sw t1 0(t0)		# salva 0 no endereco, fazendo que o frame atual seja o 0.
 
+PRINT:		
+	la a0, Carro0
+	li a1, 144		
+	li a2, 104
+	li a3, 0
 	li s0,0			# zera o contador
-CONTA:  addi s0,s0,1		# incrementa o contador
-	jal KEY2		# le o teclado	blocking
-	j CONTA			# volta ao loop
+	call PRINT_SPRITE
+	j MOVER_ESQUERDA
 
 
 MOVER_ESQUERDA:
-	addi a1, a1, 16
-	call PRINT_SPRITE
-	
-PRINT:		
 	la a0, Carro0
-	li a1, 144
-	li a2, 104
-	li a3, 0
+	addi a1,a1,16
 	call PRINT_SPRITE
+	j MOVER_ESQUERDA
+	j KEY2
 	
-	j EXIT	
-
-
-
-		
 PRINT_SPRITE:
 	# a0: endereco da imagem
 	# a1: posicao horizontal (x)
@@ -75,7 +85,6 @@ PRINT_SPRITE:
 	j PRINT_LOOP
 	
 	DONE:
-	j KEY2
 	ret
 
 EXIT:	li a7, 10
@@ -86,12 +95,9 @@ EXIT:	li a7, 10
 KEY2:	li t1,0xFF200000		# carrega o endereço de controle do KDMMIO
 	lw t0,0(t1)			# Le bit de Controle Teclado
 	andi t0,t0,0x0001		# mascara o bit menos significativo
-   	beq t0,zero,FIM   	   	# Se não há tecla pressionada então vai para FIM
+   	beq t0,zero,KEY2   	   	# Se não há tecla pressionada então vai para FIM
   	lw t2,4(t1) 			# le o valor da tecla tecla
-  	li t3,0x97
-  	beq t2,t3,MOVER_ESQUERDA		# if t2 == 'a' 0x61
-	sw t2,12(t1)  
-	j PRINT			# escreve a tecla pressionada no display
-FIM:	ret				# retorna
-	
-
+  	li t3,0x61
+  	beq t2,t3,MOVER_ESQUERDA	# if t2 == 'a' 0x61
+	sw t2,12(t1)			# escreve a tecla pressionada no display
+	j KEY2
