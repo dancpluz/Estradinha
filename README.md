@@ -26,11 +26,11 @@ Recriação do jogo Road Fighter (NES) em Assembly. Projeto em RISC-V da matéri
 - [ ] Carro mexendo com teclado
 - [ ] Como fazer a função de movimentação
 
-
-
 # Progresso:
 - [X] Printar alguma coisa no bitmap
+- [X] Printar sprite em outra posição
 - [ ] Fazer um pixel se mexer
+- [ ] Menu selecionável
 - [ ] Mapa e todos os sprites printáveis
 - [ ] Utilização do teclado
 - [ ] Movimentação
