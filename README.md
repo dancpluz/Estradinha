@@ -18,6 +18,7 @@ Recriação do jogo Road Fighter (NES) em Assembly. Projeto em RISC-V da matéri
 - Combustivel é um temporizador, o tempo conta mesmo se o carro estiver parado. Se o carro bater em um carro colorido, tempo += 5, se morrer, tempo -= 5 /// jogo acaba quando tempo = 0
 - carros vermelhos mudam de posição apenas uma vez /// carros azuis mudam de posição constantemente /// carros amarelos não mudam de posição.
 - Separar sprites em arquivos
+- Hooktheory.com para músicas
 
 # Pesquisas:
 - [X] Vídeo discord transformando bitmap em .data
@@ -25,6 +26,7 @@ Recriação do jogo Road Fighter (NES) em Assembly. Projeto em RISC-V da matéri
 - [X] Sprite do carro na tela
 - [ ] Carro mexendo com teclado
 - [ ] Como fazer a função de movimentação
+- [ ] Transformar música em notas para RARS
 
 # Progresso:
 - [X] Printar alguma coisa no bitmap
