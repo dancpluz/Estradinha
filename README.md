@@ -24,16 +24,27 @@ Recriação do jogo Road Fighter (NES) em Assembly. Projeto em RISC-V da matéri
 - [X] Vídeo discord transformando bitmap em .data
 - [X] Criar .data com bmp de resoluções diferentes
 - [X] Sprite do carro na tela
-- [ ] Carro mexendo com teclado
-- [ ] Como fazer a função de movimentação
-- [ ] Transformar música em notas para RARS
+- [X] Carro mexendo com teclado
+- [X] Como fazer a função de movimentação
+- [X] Transformar música em notas para RARS
 
 # Progresso:
 - [X] Printar alguma coisa no bitmap
 - [X] Printar sprite em outra posição
-- [ ] Fazer um pixel se mexer
-- [ ] Menu selecionável
-- [ ] Mapa e todos os sprites printáveis
-- [ ] Utilização do teclado
-- [ ] Movimentação
-- [ ] Áudio
+- [X] Fazer um pixel se mexer
+- [X] Menu selecionável
+- [X] Mapa e todos os sprites printáveis
+- [X] Utilização do teclado
+- [X] Movimentação
+- [X] Áudio
+- [X] Aceleração carro
+- [X] 3 Mapas
+- [X] Gasolina
+- [X] Colisão com gasolina
+- [X] Condição de vitória
+- [X] Tela de vitória/derrota
+- [] Gasolina aleatória
+- [] Spawn de carros
+- [] Carros aleatórios
+- [] HUD
+- [] Trilha sonora
