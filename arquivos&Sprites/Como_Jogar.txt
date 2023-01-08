@@ -1,0 +1,7 @@
+W -> aumenta velocidade
+a -> move para esquerda
+d -> move para direta
+espaço -> seleciona o level
+esc -> Pausa
+
+arraste "movimento_carro.s" para "fpgrars-x86_64-pc-windows-gnu--8-bit-display.exe"
