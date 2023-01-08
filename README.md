@@ -1,5 +1,5 @@
 # 🚗 RoadFighter_RISC-V 🏎
-Recriação do jogo Road Fighter (NES) em Assembly. Projeto em RISC-V da matéria ISC na UNB.
+Recriação do jogo Road Fighter (NES) em Assembly. Projeto em RISC-V da matéria ISC na UNB. Feito no RARS, orientado pelo Professor Marcus Vinícius Lamar.
 
 ![upload-road-fighter-1575231313140](https://user-images.githubusercontent.com/64702639/160934977-a04cc4e6-6c98-43d6-b299-9f5ba6c1797d.jpeg)
 
@@ -38,13 +38,19 @@ Recriação do jogo Road Fighter (NES) em Assembly. Projeto em RISC-V da matéri
 - [X] Movimentação
 - [X] Áudio
 - [X] Aceleração carro
-- [X] 3 Mapas
+- [X] 2 Mapas
 - [X] Gasolina
 - [X] Colisão com gasolina
 - [X] Condição de vitória
 - [X] Tela de vitória/derrota
-- [] Gasolina aleatória
-- [] Spawn de carros
-- [] Carros aleatórios
-- [] HUD
-- [] Trilha sonora
+- [X] Easter Egg
+- [ ] Gasolina aleatória
+- [ ] Spawn de carros
+- [ ] Carros aleatórios
+- [ ] HUD
+- [ ] Trilha sonora
+
+# Imagens do Jogo:
+![image](https://user-images.githubusercontent.com/64702639/211206193-a1826350-3927-4b28-9952-7cb3ec99715c.png)
+![image](https://user-images.githubusercontent.com/64702639/211206212-030fa244-e208-4aef-aa16-1a4955bf43d9.png)
+![image](https://user-images.githubusercontent.com/64702639/211206219-485c2834-9c6c-4bba-9438-dbac4f60f7c4.png)
