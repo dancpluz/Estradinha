@@ -38,10 +38,11 @@ Recriação do jogo Road Fighter (NES) em Assembly. Projeto em RISC-V da matéri
 - [X] Movimentação
 - [X] Áudio
 - [X] Aceleração carro
+- [X] Colisão carro com pista
 - [X] 2 Mapas
 - [X] Gasolina
 - [X] Colisão com gasolina
-- [X] Condição de vitória
+- [X] Condição de vitória/derrota
 - [X] Tela de vitória/derrota
 - [X] Easter Egg
 - [ ] Gasolina aleatória
