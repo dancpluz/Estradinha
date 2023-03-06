@@ -20,14 +20,15 @@ You can find the more descriptive report, in scientific article model, only in P
   <img src="https://user-images.githubusercontent.com/64702639/223157235-32db3dec-a3b2-428e-b384-063771c74c7c.gif" align="right" width="400"/>
 </picture>
 
-- Pause
 - Initial menu
 - Car movement
 - 2 different maps
 - Win condition
+- Pause
 - Sound effects
 - Map collisions
 - Gas system
+- Fun references
 
 
 ## 🛠 Built With
@@ -39,7 +40,7 @@ You can find the more descriptive report, in scientific article model, only in P
 ## 👥 Group
 
 - **[Daniel](https://github.com/dancpluz):** Game logic, programming
-- **[Gabriel](https://github.com/GabsonXD):** Sprites, maps design
+- **[Gabriel](https://github.com/GabsonXD):** Sprites, maps design, report
 
 ## 🤝 Contributions 
 
